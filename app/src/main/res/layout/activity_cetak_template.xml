@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wvLaporan" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/whiteTextColor"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/btnSavePdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cetak Invoice"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@color/mapboxBlue"
+                android:textColor="@color/whiteTextColor"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btnBatalCetak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@color/themeColor"
+                android:textColor="@color/whiteTextColor"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

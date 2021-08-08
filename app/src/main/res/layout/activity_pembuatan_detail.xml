@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sona.ktp.activity.pembuatan.PembuatanDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPageTitle"
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Pengajuan Pembuatan KTP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvWaktu"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Waktu Pengajuan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvNik"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="NIK"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvNama"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Nama"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTempatLahir"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Tempat Lahir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTanggalLahir"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Tanggal Lahir"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvJenisKelamin"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Jenis Kelamin"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAlamat"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Alamat"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvRtrw"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="RT/RW"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKeldesa"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Kelurahan/Desa"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKecamatan"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Kecamatan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAgama"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Agama"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvStatusPekerjaan"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Status Pekerjaan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvStatusPernikahan"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Status Pernikahan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKewarganegaraan"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Kewarganegaraan"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvBerlakuHingga"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Berlaku Hingga"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvStatusPembuatan"
+                        style="@style/modifiedEditText"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Status Pembuatan"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvCatatan"
+                        style="@style/modifiedEditText"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Catatan"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/btnEditDetail"
+                        style="@style/primaryButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:layout_marginBottom="@dimen/loginViewsMargin"
+                        android:text="Edit Data"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/btnDeleteDetail"
+                        style="@style/secondaryButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/loginViewsMargin"
+                        android:text="Delete Data"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/btnKirim"
+                        style="@style/thirdButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/loginViewsMargin"
+                        android:text="Submit Data"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

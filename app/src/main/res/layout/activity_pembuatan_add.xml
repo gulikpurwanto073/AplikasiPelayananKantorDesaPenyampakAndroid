@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.pembuatan.PembuatanAddActivity"
+    android:background="@color/themeColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/viewParent.headerText.NoMode"
+            android:text="Pengajuan Pembuatan KTP"
+            android:id="@+id/tvPageTitle"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/whiteTextColor"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName13"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etNik"
+                        style="@style/modifiedEditText"
+                        android:hint="NIK"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName"
+                    style="@style/parent"
+                    android:layout_marginTop="0dp">
+
+                    <EditText
+                        android:id="@+id/etNama"
+                        style="@style/modifiedEditText"
+                        android:hint="Nama"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName1"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etTempatLahir"
+                        style="@style/modifiedEditText"
+                        android:hint="Tempat Lahir"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName2"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etTanggalLahir"
+                        style="@style/modifiedEditText"
+                        android:hint="Tanggal Lahir"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:cursorVisible="false"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName3"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                    <Spinner
+                        android:id="@+id/spJenisKelamin"
+                        style="@style/spinnerHintText"
+                        android:hint="Jenis Kelamin"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12dp"
+                        android:prompt="@string/jenis_kelamin_prompt"
+                        android:entries="@array/jenis_kelamin_entries"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName4"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etAlamat"
+                        style="@style/modifiedEditText"
+                        android:hint="Alamat"
+                        android:inputType="text"
+                        android:maxLines="3"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName5"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etRtrw"
+                        style="@style/modifiedEditText"
+                        android:hint="RT/RW"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName6"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etKeldesa"
+                        style="@style/modifiedEditText"
+                        android:hint="Kelurahan/Desa"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName7"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etKecamatan"
+                        style="@style/modifiedEditText"
+                        android:hint="Kecamatan"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName8"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Agama"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                    <Spinner
+                        android:id="@+id/spAgama"
+                        style="@style/spinnerHintText"
+                        android:hint="Agama"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12dp"
+                        android:prompt="@string/agama_prompt"
+                        android:entries="@array/agama_entries"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName9"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etStatusPekerjaan"
+                        style="@style/modifiedEditText"
+                        android:hint="Status Pekerjaan"
+                        android:inputType="text"
+                        android:maxLines="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName10"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Status Pernikahan"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                    <Spinner
+                        android:id="@+id/spStatusPernikahan"
+                        style="@style/spinnerHintText"
+                        android:hint="Status Pernikahan"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12dp"
+                        android:prompt="@string/status_pernikahan_prompt"
+                        android:entries="@array/status_pernikahan_entries"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName11"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kewarganegaraan"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12sp"
+                        android:visibility="visible"/>
+
+                    <Spinner
+                        android:id="@+id/spKewarganegaraan"
+                        style="@style/spinnerHintText"
+                        android:hint="Kewarganegaraan"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif"
+                        android:textSize="12dp"
+                        android:prompt="@string/kewarganegaraan_prompt"
+                        android:entries="@array/kewarganegaraan_entries"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName12"
+                    style="@style/parent"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etBerlakuHingga"
+                        style="@style/modifiedEditText"
+                        android:hint="Berlaku Hingga"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:focusable="false"
+                        android:cursorVisible="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*Kosongkan jika KTP berlaku selamanya"
+                        android:textSize="10dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black"/>
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:id="@+id/btnSimpan"
+                    style="@style/primaryButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginBottom="15dp"
+                    android:text="Simpan"
+                    app:initialCornerAngle="27dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"
+                    app:spinning_bar_width="4dp" />
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:id="@+id/btnKembali"
+                    style="@style/secondaryButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="35dp"
+                    android:text="Kembali"
+                    app:initialCornerAngle="27dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"
+                    app:spinning_bar_width="4dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

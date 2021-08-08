@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:id="@+id/swiperefreshmain"
+    tools:context="com.sona.ktp.activity.home.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themeColor">
+
+            <RelativeLayout
+                android:id="@+id/badge3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentStart="true"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/colorPrimary"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/btnUserProfile">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/ivFotoUser"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:src="@drawable/icon_no_photos" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvCurAlertAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/relative_layout3"
+                    android:background="@drawable/shape_item_count"
+                    android:text="!"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/badge_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dip"
+                        android:padding="0dp"
+                        android:gravity="center_vertical|center"
+                        android:textStyle="bold"
+                        android:text="Kantor Desa Penyampak"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/themeColor"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvCurPesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/relative_layout"
+                    android:background="@drawable/shape_item_count"
+                    android:text="Stok"
+                    android:textColor="#FFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="340dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="128dp"
+                                android:layout_height="110dp"
+                                android:src="@drawable/pengajuanktp"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:id="@+id/btnPengajuanKtp"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightgray"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Pengajuan Pembuatan KTP"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="340dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="128dp"
+                                android:layout_height="110dp"
+                                android:src="@drawable/kritikdansaran"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:id="@+id/btnKritikSaran"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightgray"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Kritik dan Saran"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="340dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageButton
+                                android:layout_width="128dp"
+                                android:layout_height="110dp"
+                                android:src="@drawable/logout"
+                                android:padding="10dp"
+                                android:scaleType="fitXY"
+                                android:id="@+id/btnLogout"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/lightgray"
+                                android:layout_margin="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Log Out"
+                                android:padding="5dp"
+                                android:textColor="@android:color/darker_gray"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
