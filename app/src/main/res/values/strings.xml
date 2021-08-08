@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kantor Desa Penyampak</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="jenis_kelamin_prompt">Pilih Jenis Kelamin</string>
+    <string-array name="jenis_kelamin_entries">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string name="agama_prompt">Pilih Agama</string>
+    <string-array name="agama_entries">
+        <item>Islam</item>
+        <item>Katolik</item>
+        <item>Protestan</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Konghuchu</item>
+    </string-array>
+
+    <string name="status_pernikahan_prompt">Pilih Status Pernikahan</string>
+    <string-array name="status_pernikahan_entries">
+        <item>Menikah</item>
+        <item>Belum Menikah</item>
+    </string-array>
+
+    <string name="kewarganegaraan_prompt">Pilih Kewarganegaraan</string>
+    <string-array name="kewarganegaraan_entries">
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+</resources>
